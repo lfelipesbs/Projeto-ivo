@@ -10,7 +10,6 @@ def enviar_feedback(request):
         feedback1 = request.POST.get('feedback')
 
         novo_feedback = feedback(nome=nome, turma=turma, feedbacks=feedback1)
-        print(novo_feedback)
         novo_feedback.save()
         return redirect("obrigado")
 
