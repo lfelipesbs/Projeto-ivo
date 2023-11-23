@@ -56,7 +56,7 @@
             font-size: 16px;
         }
 
-        #feedbackText {
+        #descricaoText {
             height: 150px;
             resize: vertical;
         }
@@ -82,25 +82,27 @@
     <div class="header">
         Atividades
     </div>
-    <div class="container">
-        <div class="info-box" id="nomeAluno">
-            <label for="nome">Nome da Atividade:</label>
-            <input type="text" id="nome" name="nome">
-        </div>
+    <form action="" method="POST">
+        {% csrf_token %}
+        <div class="container">
+            <div class="info-box" id="nome">
+                <label for="nome">Nome da Atividade:</label>
+                <input type="text" id="nome" name="nome">
+            </div>
 
-        <div class="info-box" id="turmaAluno">
-            <label for="turma">Atividade para turma:</label>
-            <input type="text" id="turma" name="turma">
-        </div>
+            <div class="info-box" id="turma">
+                <label for="turma">Atividade para turma:</label>
+                <input type="text" id="turma" name="turma">
+            </div>
 
-        <div class="info-box" id="feedback">
-            <label for="feedbackText">Descrição da atividade:</label>
-            <textarea id="feedbackText" name="feedbackText"></textarea>
+            <div class="info-box" id="descricao">
+                <label for="descricaoText">Descrição da atividade:</label>
+                <textarea id="descricao" name="descricao"></textarea>
+            </div>
+            <a href="{% url 'enviar' %}">
+                <button class="button" type="submit">Continuar</button>
+            </a>
         </div>
-
-        <a href="http://127.0.0.1:5500/viadao/gay/templates/2.html">
-            <button class="button" type="submit">Continuar</button>
-        </a>
-    </div>
+    </form>
 </body>
 </html>
