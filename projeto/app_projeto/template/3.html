@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+            color: #333;
+        }
+
+        .header {
+            background-color: #3498db;
+            height: 60px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 24px;
+        }
+
+        .container {
+            margin: 20px auto;
+            max-width: 600px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        .info-box {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        .info-box label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .info-box input, .info-box textarea {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            margin-top: 5px;
+            font-size: 16px;
+        }
+
+        #feedbackText {
+            height: 150px;
+            resize: vertical;
+        }
+
+        .button {
+            display: block;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        Atividades
+    </div>
+    <div class="container">
+        <div class="info-box" id="nomeAluno">
+            <label for="nome">Nome da Atividade:</label>
+            <input type="text" id="nome" name="nome">
+        </div>
+
+        <div class="info-box" id="turmaAluno">
+            <label for="turma">Atividade para turma:</label>
+            <input type="text" id="turma" name="turma">
+        </div>
+
+        <div class="info-box" id="feedback">
+            <label for="feedbackText">Descrição da atividade:</label>
+            <textarea id="feedbackText" name="feedbackText"></textarea>
+        </div>
+
+        <a href="http://127.0.0.1:5500/viadao/gay/templates/2.html">
+            <button class="button" type="submit">Continuar</button>
+        </a>
+    </div>
+</body>
+</html>
