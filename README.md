@@ -1,6 +1,7 @@
 # Projeto-ivo
 
 O projeto é bem simples, foi criado para implementar duas histórias extras a pedido do Coordernador Ivo.
+
 História 1 - feedbacks
 Eu, como professor,
 desejo a capacidade de enviar feedbacks personalizados sobre os alunos, incluindo seus nomes e turmas. Isso me permitirá destacar aspectos positivos, como bom comportamento, participação ativa e realizações notáveis. Quero uma interface intuitiva que permita inserir comentários de forma fácil e rápida, garantindo que cada feedback seja personalizado para atender às necessidades individuais de cada aluno. Além disso, desejo a funcionalidade de revisitar feedbacks anteriores para um acompanhamento consistente e uma visão histórica do progresso do aluno.
